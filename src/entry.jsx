@@ -1,4 +1,9 @@
-var React = require('react')
-var AppComponent = require('./components/productBox')
+import React from 'react'
+import ReactDom from 'react-dom'
+import App from './components/productBox'
 
-React.render()
+console.warn(App)
+ReactDom.render(
+  <App />,
+  document.getElementById('app')
+)
